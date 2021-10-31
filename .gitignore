@@ -4,4 +4,4 @@
 *.json
 *.bmp
 pilot/
-*checkpoint.ipynb
+.ipynb_checkpoints
