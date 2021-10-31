@@ -1,0 +1,23 @@
+#!/bin/bash
+#SBATCH --job-name=OpenPoseES
+
+#SBATCH --partition=short,gpu
+#SBATCH --gres=gpu:1
+
+module load openpose
+openpose.bin --video 1.avi --write_json ./output/1/ --write_video ./output/1/video.avi --hand --display 0 --keypoint_scale 3
+openpose.bin --video 2.avi --write_json ./output/2/ --write_video ./output/2/video.avi --hand --display 0 --keypoint_scale 3
+openpose.bin --video 4.avi --write_json ./output/4/ --write_video ./output/4/video.avi --hand --display 0 --keypoint_scale 3
+openpose.bin --video 9.avi --write_json ./output/9/ --write_video ./output/9/video.avi --hand --display 0 --keypoint_scale 3
+openpose.bin --video 10.avi --write_json ./output/10/ --write_video ./output/10/video.avi --hand --display 0 --keypoint_scale 3
+openpose.bin --video 11.avi --write_json ./output/11/ --write_video ./output/11/video.avi --hand --display 0 --keypoint_scale 3
+openpose.bin --video 13.avi --write_json ./output/13/ --write_video ./output/13/video.avi --hand --display 0 --keypoint_scale 3
+openpose.bin --video 15.avi --write_json ./output/15/ --write_video ./output/15/video.avi --hand --display 0 --keypoint_scale 3
+openpose.bin --video 16.avi --write_json ./output/16/ --write_video ./output/16/video.avi --hand --display 0 --keypoint_scale 3
+openpose.bin --video 22.avi --write_json ./output/22/ --write_video ./output/22/video.avi --hand --display 0 --keypoint_scale 3
+openpose.bin --video 25.avi --write_json ./output/25/ --write_video ./output/25/video.avi --hand --display 0 --keypoint_scale 3
+openpose.bin --video 26.avi --write_json ./output/26/ --write_video ./output/26/video.avi --hand --display 0 --keypoint_scale 3
+openpose.bin --video 27.avi --write_json ./output/27/ --write_video ./output/27/video.avi --hand --display 0 --keypoint_scale 3
+openpose.bin --video 28.avi --write_json ./output/28/ --write_video ./output/28/video.avi --hand --display 0 --keypoint_scale 3
+openpose.bin --video 31.avi --write_json ./output/31/ --write_video ./output/31/video.avi --hand --display 0 --keypoint_scale 3
+openpose.bin --video 35.avi --write_json ./output/35/ --write_video ./output/35/video.avi --hand --display 0 --keypoint_scale 3

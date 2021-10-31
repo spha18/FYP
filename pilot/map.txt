@@ -1,0 +1,17 @@
+videos and images have been deleted for confidentiality
+extracted data can be found on google drive due to folder size
+spreadsheet data for the pilot dataset can be found on MonARCH: yl37/spha18/Pilot dataset.xlsx
+-----------------------------------------------------------------------------------------------------------------------------
+folder structure is identical for ES and PNES:
+
+ES/ - contains seizure videos, one per event (partials joined with FFmpeg). These can be found in MonARCH: yl37/spha18/ES
+    - contains Slurm scripts pose.script and face.script for processing videos on MonARCH
+
+ES/partial/ - contains backups of partial videos after they have been joined with FFmpeg
+
+ES/output/ - contains folders output by OpenPose filled with .json files (and an overlaid video if specified)
+ES/processed/ - contains the raw .csv files output by OpenFace (as well as any other outputs specifed eg. video with overlay)
+
+ES/OpenPose Pose/ - contains .csv files output by OpenPose json stitch Pose.ipynb
+ES/OpenPose Hands/ - contains .csv files output by OpenPose json stitch Hands.ipynb
+ES/OpenFace Normalised/ - contains .csv files output by OpenFace Normalise.ipynb

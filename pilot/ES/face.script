@@ -1,0 +1,12 @@
+#!/bin/bash
+#SBATCH --job-name=OpenFaceES
+
+#SBATCH --partition=short,gpu
+#SBATCH --gres=gpu:1
+
+module load openface
+FeatureExtraction -f "6.avi"
+FeatureExtraction -f "7.avi"
+FeatureExtraction -f "8.avi"
+FeatureExtraction -f "28.avi"
+FeatureExtraction -f "29.avi"

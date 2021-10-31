@@ -1,0 +1,22 @@
+#!/bin/bash
+#SBATCH --job-name=OpenPosePNES
+
+#SBATCH --partition=short,gpu
+#SBATCH --gres=gpu:1
+
+module load openpose
+openpose.bin --video 3.avi --write_json ./output/3/ --write_video ./output/3/video.avi --hand --display 0 --keypoint_scale 3
+openpose.bin --video 5.avi --write_json ./output/5/ --write_video ./output/5/video.avi --hand --display 0 --keypoint_scale 3
+openpose.bin --video 12.avi --write_json ./output/12/ --write_video ./output/12/video.avi --hand --display 0 --keypoint_scale 3
+openpose.bin --video 14.avi --write_json ./output/14/ --write_video ./output/14/video.avi --hand --display 0 --keypoint_scale 3
+openpose.bin --video 17.avi --write_json ./output/17/ --write_video ./output/17/video.avi --hand --display 0 --keypoint_scale 3
+openpose.bin --video 18.avi --write_json ./output/18/ --write_video ./output/18/video.avi --hand --display 0 --keypoint_scale 3
+openpose.bin --video 19.avi --write_json ./output/19/ --write_video ./output/19/video.avi --hand --display 0 --keypoint_scale 3
+openpose.bin --video 20.avi --write_json ./output/20/ --write_video ./output/20/video.avi --hand --display 0 --keypoint_scale 3
+openpose.bin --video 21.avi --write_json ./output/21/ --write_video ./output/21/video.avi --hand --display 0 --keypoint_scale 3
+openpose.bin --video 23.avi --write_json ./output/23/ --write_video ./output/23/video.avi --hand --display 0 --keypoint_scale 3
+openpose.bin --video 24.avi --write_json ./output/24/ --write_video ./output/24/video.avi --hand --display 0 --keypoint_scale 3
+openpose.bin --video 32.avi --write_json ./output/32/ --write_video ./output/32/video.avi --hand --display 0 --keypoint_scale 3
+openpose.bin --video 33.avi --write_json ./output/33/ --write_video ./output/33/video.avi --hand --display 0 --keypoint_scale 3
+openpose.bin --video 34.avi --write_json ./output/34/ --write_video ./output/34/video.avi --hand --display 0 --keypoint_scale 3
+openpose.bin --video 36.avi --write_json ./output/36/ --write_video ./output/36/video.avi --hand --display 0 --keypoint_scale 3

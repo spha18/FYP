@@ -1,7 +1,7 @@
 
 *.npz
-*.avi
 *.json
-*.bmp
-pilot/
 .ipynb_checkpoints
+*.csv
+*.hog
+*_of_details.txt
